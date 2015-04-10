@@ -12,18 +12,21 @@ int main(void)
 {
     int result;
     
+    printf("Table of First 10 Factorials\n\n");
+    printf(" n      n!\n");
+    printf("---  -------\n");
     for (int i = 1; i <= 10; i++)
     {
         result = i;
         
-        printf("%2i! = ", i);
+        printf("%2i ", i);
        
         for (int j = (i - 1); j >= 1; j--)
         {
             result *= j;
         }
        
-        printf("%7i\n", result);
+        printf(" %7i\n", result);
     }
     return 0;
 }
